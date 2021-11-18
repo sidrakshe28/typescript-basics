@@ -97,11 +97,38 @@ name: string
 
 constructor(id:number,name:string){
 this.id=id
-this.name=name1,
+this.name=name,
+}
+
+register(){
+    return `${this.name} is now registred`
 }
 }
 
 const brad=new Person(1,'sid')
 const mike=new Person(2,'jordan')
 
+console.log(brad.register())
+
 console.log(brad,mike)
+
+//data modifiers-public,private,protected
+
+//extended class
+
+class Employee extends Person{
+    position:string
+
+    constructor(id:number,name:string ,position: string){
+     super(id,name)
+     this.position=position
+    }
+}
+
+const emp=new Employee(3,'sid','developer')
+console.log(emp.register());
+
+
+
+
+
