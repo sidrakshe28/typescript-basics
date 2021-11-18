@@ -64,3 +64,18 @@ function addnum(x:number,y:number) :number{
     return x+y
 }
 console.log(addnum(1,2))
+
+
+
+//interface
+
+interface UserInterface{
+    id:number,
+    name:string
+    age?:number
+}
+const user1 : UserInterface={
+    id: 1,
+    name: 'john',
+}
+
